@@ -71,7 +71,8 @@
 
 									<!-- Text -->
 
-									<?php echo $get_aboutdata['about_us']; ?>
+									<?php echo $get_aboutdata['about_us'] ?? 'Default About Us content'; ?>
+
 
 								</div>
 							</div>	<!-- END ABOUT TEXT -->
