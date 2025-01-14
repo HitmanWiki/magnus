@@ -142,7 +142,7 @@
 
 
 
-<?php // $this->load->view('inc/select-country.php');?>
+<?php  $this->load->view('inc/select-country.php');?>
 
 <?php  $this->load->view('inc/about.php');?>
 
@@ -375,7 +375,7 @@
 
 
 
-		<?php //$this->load->view('inc/universities.php');  ?>
+		<?php $this->load->view('inc/universities.php');  ?>
 
 
 
