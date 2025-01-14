@@ -76,7 +76,7 @@ $blog_category=$blog->row_array();?>
 				<section id="about-page" class="page-hero-section division">
 					<div class="container">	
 						<div class="row">	
-<?php $category=$this->db->query("select * from tbl_blog_category where sno='$blog_category[category]'");
+<?php $category=$this->db->query("select * from tbl_blog_category where id='$blog_category[category]'");
 $data_cat=$category->row_array();?>
 
 							<!-- PAGE HERO TEXT -->
