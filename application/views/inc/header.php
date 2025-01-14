@@ -175,18 +175,20 @@ Near Makkar Sweets , Barnala Road , Sirsa - ( Haryana)</span>
 						           		<ul class="sub-menu"> -->
                                         
                                         <?php //print_r($get_countries);
-										foreach($get_countries as $countries)
-										{
+										// foreach($get_countries as $countries)
+										// {
 											
-											$checkdata=$this->db->query("select * from tb_immigration_data where countryID='$countries[countryID]'");
-											if($checkdata->num_rows()>0)
-											{
+										// 	$checkdata=$this->db->query("select * from tb_immigration_data where countryID='$countries[countryID]'");
+										// 	if($checkdata->num_rows()>0)
+										// 	{
 											
-										 ?>
-						           			<li aria-haspopup="true"><a href="<?php echo base_url('country/'.$countries['web_cslug']);?>"><?php echo $countries['country']; ?></a></li>
+										//  ?>
+						           			<!-- <li aria-haspopup="true"> -->
+												<!-- <a href="
+												 <?php echo base_url('country/'.$countries['web_cslug']);?>"><?php echo $countries['country']; ?></a></li> -->
                                         <?php
-											}
-										}
+											// }
+										// }
 										?> 
 						           		</ul>
 						          	</li>	<!-- END DROPDOWN MENU -->
