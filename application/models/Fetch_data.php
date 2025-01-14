@@ -63,11 +63,11 @@ public function get_testimonial()
 
 public function get_slider()
 {
-		$this->db->from('tbl_slider');
-		$result = $this->db->get();
-		$fetch= $result->row_array();
-		return $result->result_array(); 
+    $this->db->from('tbl_slider');
+    $result = $this->db->get();
+    return $result->result_array(); // Return all rows as an array
 }
+
 public function get_blog()
 {
 	$this->db->from('tbl_blog_category');
