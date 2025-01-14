@@ -13,7 +13,7 @@ class Home extends CI_Controller {
 public function index()
 {
 	$data['get_countries']=$this->fetch_data->get_countries();
-	$data['get_aboutdata']=$this->fetch_data->get_aboutus();
+	$data['about_us'] = $data['get_aboutdata']['about_us'] ?? ''; // Use 'about_us' column
 	$data['get_testimonial']=$this->fetch_data->get_testimonial();
 	$data['get_slider']=$this->fetch_data->get_slider();
 	$data['get_detail']=$this->fetch_data->get_blog();
