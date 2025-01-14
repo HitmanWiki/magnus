@@ -388,65 +388,59 @@
 
 
 			<!-- TESTIMONIALS-1
-============================================= -->
-<section id="reviews-1" class="wide-40 reviews-section division">
-    <div class="container">
+			============================================= -->
+			<section id="reviews-1" class="wide-40 reviews-section division">
+				<div class="container">
 
-        <!-- SECTION TITLE -->
-        <div class="row">    
-            <div class="col-md-12 section-title center">            
 
-                <!-- Title -->
-                <h2 class="h2-xs darkblue-color">Success Stories</h2>
+					<!-- SECTION TITLE -->
+					<div class="row">	
+						<div class="col-md-12 section-title center">			
 
+			 				<!-- Title -->
+							<h2 class="h2-xs darkblue-color">Success Stories</h2>
+
+						</div>
+					</div>	 <!-- END SECTION TITLE -->	
+
+					
+					<!-- TESTIMONIALS CONTENT -->
+					<div class="row">
+						<div class="col-md-12">					
+
+
+<div class="container-fluid">
+    <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+        <div class="carousel-inner w-100" role="listbox">
+            <div class="carousel-item row no-gutters active">
+                <div class="col-3 float-left"><img class="img-fluid" src="<?php echo base_url();?>assets/images/success-stories/image-not-available.jpg"></div>
+                <div class="col-3 float-left"><img class="img-fluid" src="<?php echo base_url();?>assets/images/success-stories/image-not-available.jpg"></div>
+                <div class="col-3 float-left"><img class="img-fluid" src="<?php echo base_url();?>assets/images/success-stories/image-not-available.jpg"></div>
+                <div class="col-3 float-left"><img class="img-fluid" src="<?php echo base_url();?>assets/images/success-stories/image-not-available.jpg"></div>
             </div>
-        </div>    <!-- END SECTION TITLE -->    
+            <div class="carousel-item row no-gutters">
+                <div class="col-3 float-left"><img class="img-fluid" src="<?php echo base_url();?>assets/images/success-stories/image-not-available.jpg"></div>
+                <div class="col-3 float-left"><img class="img-fluid" src="<?php echo base_url();?>assets/images/success-stories/image-not-available.jpg"></div>
+                <div class="col-3 float-left"><img class="img-fluid" src="<?php echo base_url();?>assets/images/success-stories/image-not-available.jpg"></div>
+                <div class="col-3 float-left"><img class="img-fluid" src="<?php echo base_url();?>assets/images/success-stories/image-not-available.jpg"></div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
-        
-        <!-- TESTIMONIALS CONTENT -->
-        <div class="row">
-            <div class="col-md-12">                    
+</div>
 
-
-                <div class="container-fluid">
-                    <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-                        <div class="carousel-inner w-100" role="listbox">
-
-                            <?php 
-                            $isActive = true; // To mark the first carousel-item as active
-                            $chunkedStories = array_chunk($get_stories, 4); // Split stories into chunks of 4
-                            foreach ($chunkedStories as $storyGroup) { 
-                            ?>
-                                <div class="carousel-item row no-gutters <?php echo $isActive ? 'active' : ''; ?>">
-                                    <?php foreach ($storyGroup as $story) { ?>
-                                        <div class="col-3 float-left">
-                                            <img class="img-fluid" src="<?php echo base_url('allimages/stories/' . $story['image']); ?>" alt="Success Story">
-                                        </div>
-                                    <?php } ?>
-                                </div>
-                            <?php 
-                                $isActive = false; // Set to false after the first iteration
-                            } 
-                            ?>
-
-                        </div>
-                        <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>                                    
-        </div>    <!-- END TESTIMONIALS CONTENT --> 
-
-</section>
-		
+							
+						</div>									
+					</div>	<!-- END TESTIMONIALS CONTENT --> 
+							
 						
 				</div>	   <!-- End container -->
 			</section>	 <!-- END TESTIMONIALS-1 -->
