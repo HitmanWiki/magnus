@@ -48,16 +48,16 @@ public function countries($countrySlug)
 }
 	
 	
-//public function canada_details()
-//{
-//	$this->load->view('canada-details.php');
-//}
-//	
-//public function australia_details()
-//{
-//	$this->load->view('australia-details.php');
-//}
-//
+public function canada_details()
+{
+	$this->load->view('canada-details.php');
+}
+	
+public function australia_details()
+{
+	$this->load->view('australia-details.php');
+}
+
 
 
 public function become_agent()
