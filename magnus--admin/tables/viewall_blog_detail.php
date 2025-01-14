@@ -1,6 +1,6 @@
 <?php
 
-$str=mysqli_fetch_assoc($mysqli->query("select tbl_blog.*,tbl_blog_category.*,tbl_blog.sno as csno from tbl_blog JOIN tbl_blog_category ON tbl_blog.category=tbl_blog_category.sno where tbl_blog.sno='$_REQUEST[sno]'"));
+$str=mysqli_fetch_assoc($mysqli->query("select tbl_blog.*,tbl_blog_category.*,tbl_blog.id as cid from tbl_blog JOIN tbl_blog_category ON tbl_blog.category=tbl_blog_category.id where tbl_blog.id='$_REQUEST[id]'"));
 
 ?>
 

@@ -1,6 +1,6 @@
 <?php
 
-$str=$mysqli->query("select tbl_blog.*,tbl_blog_category.*,tbl_blog.sno as csno from tbl_blog JOIN tbl_blog_category ON tbl_blog.category=tbl_blog_category.sno order by tbl_blog.sno DESC");
+$str=$mysqli->query("select tbl_blog.*,tbl_blog_category.*,tbl_blog.id as cid from tbl_blog JOIN tbl_blog_category ON tbl_blog.category=tbl_blog_category.id order by tbl_blog.id DESC");
 
 
 
@@ -25,7 +25,7 @@ $str=$mysqli->query("select tbl_blog.*,tbl_blog_category.*,tbl_blog.sno as csno 
 <table class="table table-advance" id="table1">
 <thead>
 <tr>
-<th>Sno</th>
+<th>id</th>
 <th>Category</th>
 <th>Title</th>
 <th>Images</th>
@@ -38,7 +38,7 @@ $str=$mysqli->query("select tbl_blog.*,tbl_blog_category.*,tbl_blog.sno as csno 
 $i=1;
 while($row=mysqli_fetch_assoc($str))
 {
-	$mode=mysqli_fetch_assoc($mysqli->query("select * from tbl_blog where sno='$row[mode]'"));
+	$mode=mysqli_fetch_assoc($mysqli->query("select * from tbl_blog where id='$row[mode]'"));
 	
 ?>
 <tr>
@@ -58,12 +58,12 @@ foreach($imags as $img)
 ?>
 </td>
 <td>
-<a href="index.php?id=viewall_blog_detail&sno=<?php echo $row['csno']; ?>" title="View"><i class="fa fa-eye" style="font-size:15px;"></i></a>
+<a href="index.php?id=viewall_blog_detail&id=<?php echo $row['cid']; ?>" title="View"><i class="fa fa-eye" style="font-size:15px;"></i></a>
 &nbsp;&nbsp;
 
-<a href="index.php?id=add_blog&sno=<?php echo $row['csno']; ?>" title="Edit" onClick="return confirm('Do you want to Edit it!');"><i class="fa fa-edit" style="font-size:15px;"></i></a>
+<a href="index.php?id=add_blog&id=<?php echo $row['cid']; ?>" title="Edit" onClick="return confirm('Do you want to Edit it!');"><i class="fa fa-edit" style="font-size:15px;"></i></a>
 &nbsp;&nbsp;
-<a href="queries/delete.php?id=del_blog_details&sno=<?php echo $row['csno']; ?>" title="Delete" onClick="return confirm('Do you want to detete it!');"><i class="fa fa-times" style="font-size:15px; color:#F00"></i></a>
+<a href="queries/delete.php?id=del_blog_details&id=<?php echo $row['cid']; ?>" title="Delete" onClick="return confirm('Do you want to detete it!');"><i class="fa fa-times" style="font-size:15px; color:#F00"></i></a>
 </td>
 </tr>
 <?php

@@ -155,7 +155,7 @@ $data_cat=$category->row_array();?>
 									<ul class="blog-category-list clearfix">
 										<?php foreach($get_detail as $data)
 										{
-											$checkdata=$this->db->query("select * from tbl_blog where 	category='$data[sno]'");
+											$checkdata=$this->db->query("select * from tbl_blog where 	category='$data[id]'");
 											if($checkdata->num_rows()>0)
 											{?>
 										<li><a href="<?php echo base_url('blog/'.$data['web_slug']);?>"><i class="fas fa-angle-double-right primary-color"></i> <?php echo $data['category']; ?></a></li>
