@@ -14,7 +14,7 @@
 							<div class="footer-info mb-40">
 
 								<!-- Footer Logo -->
-								<img src="<?php echo base_url();?>assets/images/magnus/magnus-immigration.png" width="125" alt="footer-logo">
+								<img src="<?php echo base_url();?>assets/images/magnus/magnus-immigration.jpeg" width="125" alt="footer-logo">
 
 								<!-- Text -->	
 								<p class="mt-25">Magnus is a full-service immigration consultancy firm based in Mississauga, Ontario offering a complete range of immigration services for clients in Canada and abroad.

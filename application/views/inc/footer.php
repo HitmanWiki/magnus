@@ -12,7 +12,7 @@
 							<div class="footer-box mb-40">
 								<!-- Address -->
 								<h5 class="darkblue-color">Canada Office</h5>
-								<p><i class="fas fa-map-marker-alt" aria-hidden="true" style="font-size:20px;"></i> 1st Floor , Unit 12-1200 Derry Rd E,<br>Mississauga, ON L5TOB3</p>
+								<p><i class="fas fa-map-marker-alt" aria-hidden="true" style="font-size:20px;"></i> Unit 304b, 10 Gillingham Dr <br> Brampton, ON L6X 0G6</p>
                                 
 								<!-- Phone -->
 								<p class="mt-20"><strong><i class="fas fa-phone" aria-hidden="true"></i> Phone:</strong> +1(416)605-4406</p>

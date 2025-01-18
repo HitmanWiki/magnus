@@ -7,7 +7,7 @@
 					<!-- MOBILE HEADER -->
 				    <div class="wsmobileheader clearfix">	
 				    	<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>	    	
-				    	<span class="smllogo"><img src="<?php echo base_url();?>assets/images/magnus/magnus-immigration.png" width="125"  alt="mobile-logo"/></span>
+				    	<span class="smllogo"><img src="<?php echo base_url();?>assets/images/magnus/magnus-immigration.jpeg" width="125"  alt="mobile-logo"/></span>
 				    	<a href="tel:123456789" class="callusbtn"><i class="fas fa-phone"></i></a>
 				 	</div>
 
@@ -42,8 +42,8 @@ Near Makkar Sweets , Barnala Road , Sirsa - ( Haryana)</span>
 
 	    					<!-- LOGO IMAGE -->
 	    					<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 90 pixels) -->
-	    					<div class="desktoplogo"><a href="<?php echo base_url();?>" class="logo-black"><img src="<?php echo base_url();?>assets/images/magnus/magnus-immigration.png" width="90"  alt="header-logo"></a></div>
-	    					<div class="desktoplogo"><a href="<?php echo base_url();?>" class="logo-white"><img src="<?php echo base_url();?>assets/images/magnus/magnus-immigration.png" width="90"  alt="header-logo"></a></div>
+	    					<div class="desktoplogo"><a href="<?php echo base_url();?>" class="logo-black"><img src="<?php echo base_url();?>assets/images/magnus/magnus-immigration.jpeg" width="90"  alt="header-logo"></a></div>
+	    					<div class="desktoplogo"><a href="<?php echo base_url();?>" class="logo-white"><img src="<?php echo base_url();?>assets/images/magnus/magnus-immigration.jpeg" width="90"  alt="header-logo"></a></div>
 
 
 	    					<!-- MAIN MENU -->
